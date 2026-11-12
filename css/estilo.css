@@ -1,0 +1,36 @@
+/* Estação do Agente · SuperAção SP — estilos da casca (as telas trazem o próprio estilo inline, gerado do Figma) */
+html,body{margin:0;padding:0;background:#1e1e1e;}
+body{-webkit-font-smoothing:antialiased;}
+#app{position:relative;margin:0 auto;}
+.n{position:absolute;left:0;top:0;transform-origin:0 0;box-sizing:border-box;}
+.scr>.n{position:relative;}
+svg.n,svg.t{display:block;overflow:visible;}
+svg.t{position:absolute;left:0;top:0;pointer-events:none;}
+.tx{position:absolute;inset:0;color:transparent;white-space:pre-wrap;overflow-wrap:break-word;}
+.tx a{color:transparent;cursor:pointer;}
+.tx::selection,.tx *::selection{background:rgba(0,102,255,.25);color:transparent;}
+.tf{position:absolute;inset:0;white-space:pre-wrap;}
+.ia,[data-faq]{cursor:pointer;}
+[data-faq] [data-faqa]{transition:opacity .2s;}
+#fx{position:fixed;top:0;pointer-events:none;}
+#fx .n{pointer-events:auto;}
+#fx>.fxin{position:relative;}
+#ov{position:fixed;inset:0;display:none;overflow:auto;}
+#ov.on{display:block;}
+#ov .box{position:relative;margin:0 auto;}
+#app,#ov .box{transition:opacity .22s ease;}
+.fade{opacity:0;}
+
+.sx-in{position:absolute;border:0;outline:0;background:transparent;font-family:'Montserrat',sans-serif;color:#003a79;padding:0;margin:0;z-index:2;}
+.sx-hide svg.t{visibility:hidden;}
+#sx-drop{position:fixed;z-index:50;background:#fff;border-radius:14px;box-shadow:0 12px 32px rgba(0,30,70,.22);max-height:60vh;overflow:auto;display:none;font-family:'Montserrat',sans-serif;}
+#sx-drop.on{display:block;}
+#sx-drop .it{padding:12px 18px;border-bottom:1px solid #e8eef6;cursor:pointer;}
+#sx-drop .it:hover,#sx-drop .it.sel{background:#eaf2fb;}
+#sx-drop .lb{font-weight:700;color:#003a79;font-size:14px;}
+#sx-drop .sn{color:#3b4b63;font-size:12.5px;margin-top:3px;line-height:1.35;}
+#sx-drop mark{background:#ffe08a;color:inherit;border-radius:2px;}
+#sx-drop .no{padding:16px 18px;color:#5b6b80;font-size:13px;}
+.sx-empty{position:absolute;font-family:'Montserrat',sans-serif;color:#003a79;font-size:16px;padding:24px 0;}
+[data-cx]{touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;}
+[data-cx]:active{cursor:grabbing;}
