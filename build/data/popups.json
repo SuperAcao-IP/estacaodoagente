@@ -1,0 +1,818 @@
+{
+ "busca-ativa": [
+  {
+   "title": "Preparar a abordagem",
+   "desc": "Organize a busca antes de sair para o território, reunindo as informações e os recursos necessários para o contato.",
+   "como": {
+    "list": [
+     "Consulte no SIGMA as famílias indicadas para a busca ativa.",
+     "Confira os endereços e organize a rota.",
+     "Esteja devidamente identificado(a) e leve os materiais necessários.",
+     "Considere as características e as condições do território e do momento da abordagem."
+    ],
+    "lembre": "A preparação ajuda a tornar o primeiro contato mais seguro, organizado e adequado ao contexto."
+   },
+   "evitar": {
+    "list": [
+     "Sair sem conferir os dados disponíveis no SIGMA.",
+     "Realizar a abordagem sem identificação adequada.",
+     "Tratar todas as situações familiares da mesma maneira."
+    ],
+    "lembre": "A preparação ajuda a tornar o primeiro contato mais seguro, organizado e adequado ao contexto."
+   },
+   "figma": [
+    "729:1467",
+    "735:1520"
+   ]
+  },
+  {
+   "title": "Localizar e estabelecer o primeiro contato",
+   "desc": "Ao chegar ao endereço, procure estabelecer uma abordagem cordial, respeitosa e adequada às condições encontradas.",
+   "como": {
+    "list": [
+     "Apresente-se como Agente do programa SuperAção SP e mostre sua identificação.",
+     "Explique brevemente o motivo da visita e pergunte se a família pode conversar.",
+     "Observe se aquele é um momento adequado para a abordagem.",
+     "Solicite autorização antes de entrar na residência.",
+     "Se não for possível conversar naquele momento, combine outro contato quando possível",
+     "Se a família não for localizada ou não atender, registre a situação e siga o procedimento previsto para novas tentativas."
+    ],
+    "lembre": "O contexto, o tom de voz, a postura e as reações da família ajudam a definir o ritmo e a forma da abordagem."
+   },
+   "evitar": {
+    "list": [
+     "Entrar na residência sem autorização.",
+     "Iniciar uma conversa quando a família não puder atender.",
+     "Ignorar sinais de desconforto, insegurança ou desconfiança.",
+     "Pressionar a família a receber o atendimento."
+    ],
+    "lembre": "O contexto, o tom de voz, a postura e as reações da família ajudam a definir o ritmo e a forma da abordagem."
+   },
+   "figma": [
+    "814:5672",
+    "814:5696"
+   ]
+  },
+  {
+   "title": "Apresentar o Programa",
+   "desc": "Explique de forma simples a proposta do Programa, o acompanhamento e as possibilidades de apoio, permitindo que a família compreenda o que está sendo proposto.",
+   "como": {
+    "list": [
+     "Explique que o **SuperAção SP **busca ampliar a autonomia da família e apoiar seus projetos de vida.",
+     "Apresente a proposta de acompanhamento personalizado, considerando a realidade, os objetivos e as potencialidades da família.",
+     "Explique que o acompanhamento pode envolver acesso a serviços e políticas públicas, qualificação profissional, trabalho formal e empreendedorismo.",
+     "Apresente, de forma geral, que existem auxílios e incentivos financeiros conforme critérios e etapas do Programa.",
+     "Explique que a participação é uma decisão da família e reserve espaço para perguntas."
+    ],
+    "lembre": "A família precisa receber informações suficientes para compreender a proposta e tomar uma decisão consciente."
+   },
+   "evitar": {
+    "list": [
+     "Prometer benefícios, serviços ou resultados.",
+     "Apresentar auxílios ou incentivos como garantia de participação.",
+     "Criar expectativas sobre serviços que não estejam assegurados.",
+     "Utilizar linguagem excessivamente técnica."
+    ],
+    "lembre": "A família precisa receber informações suficientes para compreender a proposta e tomar uma decisão consciente."
+   },
+   "figma": [
+    "814:5897",
+    "814:5923"
+   ]
+  },
+  {
+   "title": "Escutar a família e esclarecer dúvidas",
+   "desc": "Abra espaço para que a família fale sobre sua realidade, seus objetivos e suas preocupações, utilizando perguntas abertas e escuta ativa.",
+   "como": {
+    "list": [
+     "Pergunte brevemente sobre a rotina, os objetivos e as mudanças que a família gostaria de realizar.",
+     "Procure conhecer os serviços públicos que já utiliza e aqueles que gostaria de acessar.",
+     "Escute as dúvidas e preocupações antes de responder.",
+     "Adapte a apresentação do Programa ao que surgir na conversa.",
+     "Quando a dúvida extrapolar suas atribuições ou houver insegurança sobre a informação, busque orientação da Supervisão."
+    ],
+    "lembre": "A escuta ajuda a compreender o contexto da família sem antecipar etapas que serão realizadas nas visitas seguintes."
+   },
+   "evitar": {
+    "list": [
+     "Transformar a busca ativa em um diagnóstico completo.",
+     "Fazer perguntas invasivas ou conduzir as respostas.",
+     "Julgar escolhas, condições ou comportamentos apresentados.",
+     "Fornecer informações sem segurança sobre o conteúdo."
+    ],
+    "lembre": "A escuta ajuda a compreender o contexto da família sem antecipar etapas que serão realizadas nas visitas seguintes."
+   },
+   "figma": [
+    "824:5998",
+    "824:6023"
+   ]
+  },
+  {
+   "title": "Definir e registrar o próximo passo",
+   "desc": "Ao final da conversa, identifique a decisão da família e registre corretamente a situação no SIGMA.",
+   "como": {
+    "list": [
+     "**Se houver interesse em participar, informe que a próxima etapa será a Visita 1 | Conhecendo a Família.**",
+     "Se a família precisar de mais tempo, combine novo contato quando possível.",
+     "Se a família não quiser participar, respeite a decisão e registre a situação.",
+     "Se não houver contato, registre o status correspondente e siga o procedimento para as novas tentativas.",
+     "Em dúvidas ou situações específicas, informe a Supervisão."
+    ],
+    "lembre": "O registro no SIGMA deve corresponder exatamente à situação encontrada e permitir a continuidade adequada do atendimento."
+   },
+   "evitar": {
+    "list": [
+     "Pressionar a família a aceitar o Programa.",
+     "Registrar uma decisão diferente daquela manifestada pela família.",
+     "Deixar de registrar uma tentativa de visita.",
+     "Insistir diante de uma recusa clara."
+    ],
+    "lembre": "O registro no SIGMA deve corresponder exatamente à situação encontrada e permitir a continuidade adequada do atendimento."
+   },
+   "figma": [
+    "824:6066",
+    "824:6091"
+   ]
+  }
+ ],
+ "visita-1": [
+  {
+   "title": "Apresentar o Programa",
+   "desc": "Apresente o Programa, explique a proposta de acompanhamento e situe a família sobre como será a jornada.",
+   "como": {
+    "list": [
+     "Explique, de forma simples, o que é o Programa e seu propósito.",
+     "Apresente a proposta de acompanhamento construída a partir da realidade e dos objetivos da família.",
+     "Explique, de maneira geral, como acontecerão as próximas visitas.",
+     "Reserve espaço para dúvidas e verifique se a família compreendeu a proposta."
+    ],
+    "lembre": "Antes de formalizar qualquer adesão, a família precisa compreender o que é o Programa e o que pode esperar do acompanhamento."
+   },
+   "evitar": {
+    "list": [
+     "Prometer benefícios, serviços ou resultados.",
+     "Criar expectativas sobre atendimentos que não estejam garantidos.",
+     "Utilizar linguagem excessivamente técnica."
+    ],
+    "lembre": "Antes de formalizar qualquer adesão, a família precisa compreender o que é o Programa e o que pode esperar do acompanhamento."
+   },
+   "figma": [
+    "969:759",
+    "969:889"
+   ]
+  },
+  {
+   "title": "Realizar o pré-diagnóstico",
+   "desc": "Aplique o pré-diagnóstico para conhecer a situação inicial da família e verificar sua compatibilidade com o perfil de atendimento.",
+   "como": {
+    "list": [
+     "Explique à família o propósito do pré-diagnóstico.",
+     "Faça as perguntas previstas no instrumento e escute as respostas sem julgamentos.",
+     "Registre as informações de forma objetiva.",
+     "Ao concluir o instrumento, verifique o perfil de atendimento.",
+     "Quando aplicável, confirme no SIGMA a situação da família e a trilha indicada."
+    ],
+    "lembre": "O pré-diagnóstico é uma identificação inicial. O aprofundamento da realidade familiar acontece nas etapas seguintes."
+   },
+   "evitar": {
+    "list": [
+     "Antecipar conclusões antes de concluir o instrumento.",
+     "Induzir respostas.",
+     "Prometer a entrada no Programa antes da verificação do perfil.",
+     "Transformar o pré-diagnóstico em um diagnóstico completo."
+    ],
+    "lembre": "O pré-diagnóstico é uma identificação inicial. O aprofundamento da realidade familiar acontece nas etapas seguintes."
+   },
+   "figma": [
+    "969:784",
+    "969:912"
+   ]
+  },
+  {
+   "title": "Formalizar a adesão",
+   "desc": "Quando a família estiver dentro do perfil de atendimento e decidir participar, formalize sua adesão ao Programa.",
+   "como": {
+    "list": [
+     "Explique o significado da adesão e o compromisso assumido.",
+     "Esclareça as informações necessárias e responda às dúvidas.",
+     "Solicite a assinatura do Termo de Adesão.",
+     "Confirme o registro da adesão conforme o procedimento previsto.",
+     "Registre a escolha do Representante Familiar, considerando que ela pode ser revista até a segunda visita."
+    ],
+    "lembre": "A adesão deve ser consciente e ocorrer somente depois de a família compreender a proposta e decidir participar."
+   },
+   "evitar": {
+    "list": [
+     "Pressionar a família a assinar.",
+     "Tratar a assinatura como mera formalidade.",
+     "Fazer promessas sobre resultados do acompanhamento.",
+     "Formalizar a adesão antes da verificação do perfil."
+    ],
+    "lembre": "A adesão deve ser consciente e ocorrer somente depois de a família compreender a proposta e decidir participar."
+   },
+   "figma": [
+    "969:811",
+    "969:936"
+   ]
+  },
+  {
+   "title": "Entregar e apresentar o Caderno da Família",
+   "desc": "Após a adesão, entregue o Caderno da Família e explique como ele será utilizado ao longo da jornada.",
+   "como": {
+    "list": [
+     "Apresente o Caderno e explique sua finalidade.",
+     "Oriente a família sobre seu uso nas próximas visitas.",
+     "Explique que o Caderno será construído e utilizado junto com a família.",
+     "Registre nele as informações previstas para esta etapa"
+    ],
+    "lembre": "O Caderno acompanha a jornada e ajuda a família a participar ativamente do seu processo de desenvolvimento."
+   },
+   "evitar": {
+    "list": [
+     "Entregar o material sem explicar sua finalidade.",
+     "Transformar o Caderno em uma tarefa burocrática.",
+     "Deixar de registrar nele as informações previstas."
+    ],
+    "lembre": "O Caderno acompanha a jornada e ajuda a família a participar ativamente do seu processo de desenvolvimento."
+   },
+   "figma": [
+    "969:837",
+    "969:960"
+   ]
+  },
+  {
+   "title": "Agendar a próxima visita e registrar a etapa",
+   "desc": "Antes de encerrar a visita, combine a continuidade do acompanhamento e registre os procedimentos realizados.",
+   "como": {
+    "list": [
+     "Explique o que será realizado no próximo encontro.",
+     "Combine data e horário adequados para a família.",
+     "Registre o agendamento no SIGMA e no Caderno da Família, conforme o procedimento previsto.",
+     "Registre no SIGMA as informações e procedimentos realizados na visita.",
+     "Confirme a combinação com a família antes de encerrar."
+    ],
+    "lembre": "A próxima visita deve sair combinada da primeira, garantindo continuidade ao acompanhamento."
+   },
+   "evitar": {
+    "list": [
+     "Encerrar a visita sem definir a continuidade quando houver adesão.",
+     "Deixar de registrar o agendamento.",
+     "Deixar de registrar os procedimentos realizados no SIGMA."
+    ],
+    "lembre": "A próxima visita deve sair combinada da primeira, garantindo continuidade ao acompanhamento."
+   },
+   "figma": [
+    "969:863",
+    "969:984"
+   ]
+  }
+ ],
+ "visitas-2-e-3": [
+  {
+   "title": "Retomar o vínculo e explicar o diagnóstico",
+   "desc": "Retome o vínculo e explique que, como na construção de uma casa, é preciso conhecer o terreno para identificar necessidades e potencialidades da família.",
+   "como": {
+    "list": [
+     "Acolha a família e explique a finalidade do diagnóstico.",
+     "Informe que o questionário é extenso e será realizado em dois encontros.",
+     "Explique que as informações servirão de base para a construção do Plano de Desenvolvimento Familiar.",
+     "Reforce o caráter sigiloso das informações compartilhadas."
+    ],
+    "lembre": "Antes de formalizar qualquer adesão, a família precisa compreender o que é o Programa e o que pode esperar do acompanhamento."
+   },
+   "evitar": {
+    "list": [
+     "Tratar o diagnóstico como uma entrevista burocrática.",
+     "Demonstrar pressa para concluir os instrumentos.",
+     "Fazer julgamentos a partir das respostas."
+    ],
+    "lembre": "Antes de formalizar qualquer adesão, a família precisa compreender o que é o Programa e o que pode esperar do acompanhamento."
+   },
+   "figma": [
+    "978:1041",
+    "978:1169"
+   ]
+  },
+  {
+   "title": "Aplicar a EBIA",
+   "desc": "Aplique a Escala Brasileira de Insegurança Alimentar conforme as orientações do instrumento e registre as respostas no SIGMA.",
+   "como": {
+    "list": [
+     "Acesse a EBIA pelo SIGMA.",
+     "Explique à família por que o instrumento será aplicado e esclareça dúvidas antes de iniciar.",
+     "Faça as perguntas conforme o instrumento, sem alterar sua formulação.",
+     "Registre as respostas no SIGMA.",
+     "Esteja atento a sinais de desconforto ou resistência durante a aplicação."
+    ],
+    "lembre": "Em caso de identificação de situação de EBIA grave, siga o fluxo previsto pelo Programa e as orientações da Supervisão. O agente não deve comunicar o resultado da EBIA, nem mencionar a possibilidade de recebimento do auxílio de proteção social para não gerar falsas expectativas na família."
+   },
+   "evitar": {
+    "list": [
+     "Induzir respostas.",
+     "Fazer julgamentos.",
+     "Tratar a insegurança alimentar como responsabilidade individual da família."
+    ],
+    "lembre": "Em caso de identificação de situação de EBIA grave, siga o fluxo previsto pelo Programa e as orientações da Supervisão. O agente não deve comunicar o resultado da EBIA, nem mencionar a possibilidade de recebimento do auxílio de proteção social para não gerar falsas expectativas na família."
+   },
+   "figma": [
+    "978:1066",
+    "978:1192"
+   ]
+  },
+  {
+   "title": "Aplicar o Questionário de Diagnóstico",
+   "desc": "Aprofunde o conhecimento sobre a família percorrendo as dimensões previstas no questionário.",
+   "como": {
+    "list": [
+     "Siga as abas e perguntas apresentadas no SIGMA. (caso, identifique a necessidade, comece pelos temas menos sensíveis como saúde)",
+     "Explore as informações sobre renda, moradia, saúde, escolaridade, trabalho, vínculos familiares e rede de apoio.",
+     "Utilize linguagem acessível e esclareça dúvidas sem alterar o sentido das perguntas.",
+     "Respeite o tempo da família.",
+     "Registre as informações com clareza e objetividade.",
+     "Se necessário, distribua a aplicação entre as duas visitas."
+    ],
+    "lembre": "O diagnóstico será a base para a construção do Plano de Desenvolvimento Familiar."
+   },
+   "evitar": {
+    "list": [
+     "Pular etapas do questionário.",
+     "Responder pela família.",
+     "Induzir respostas.",
+     "Transformar a aplicação em um interrogatório."
+    ],
+    "lembre": "O diagnóstico será a base para a construção do Plano de Desenvolvimento Familiar."
+   },
+   "figma": [
+    "978:1092",
+    "978:1216"
+   ]
+  },
+  {
+   "title": "Identificar vulnerabilidades e potencialidades",
+   "desc": "Durante o diagnóstico, observe tanto as situações que demandam atenção quanto os recursos e capacidades que podem contribuir para a trajetória da família.",
+   "como": {
+    "list": [
+     "Identifique vulnerabilidades que aparecem nas diferentes dimensões do diagnóstico.",
+     "Observe habilidades, experiências, interesses profissionais, escolaridade, conhecimentos e experiências de trabalho.",
+     "Considere a rede de apoio, os recursos disponíveis no território e as capacidades individuais e familiares.",
+     "Registre as informações relevantes para subsidiar a etapa de planejamento."
+    ],
+    "lembre": "O diagnóstico busca compreender o que precisa ser enfrentado e também quais recursos a família já possui para construir sua trajetória."
+   },
+   "evitar": {
+    "list": [
+     "Concentrar a análise apenas nas dificuldades.",
+     "Rotular ou julgar a família a partir das informações levantadas.",
+     "Ignorar recursos e capacidades apresentados durante a conversa."
+    ],
+    "lembre": "O diagnóstico busca compreender o que precisa ser enfrentado e também quais recursos a família já possui para construir sua trajetória."
+   },
+   "figma": [
+    "978:1118",
+    "978:1240"
+   ]
+  },
+  {
+   "title": "Confirmar o Representante Familiar",
+   "desc": "Na segunda visita, confirme com a família se a pessoa escolhida como Representante Familiar permanece sendo a responsável por essa função.",
+   "como": {
+    "list": [
+     "Pergunte se a família deseja manter a escolha feita na primeira visita.",
+     "Caso haja alteração, atualize a informação no SIGMA.",
+     "Confirme os dados do novo Representante Familiar."
+    ],
+    "lembre": "A escolha do Representante Familiar pode ser alterada até a segunda visita."
+   },
+   "evitar": {
+    "list": [
+     "Pressupor que a escolha inicial é definitiva.",
+     "Deixar de atualizar a informação quando houver mudança."
+    ],
+    "lembre": "A escolha do Representante Familiar pode ser alterada até a segunda visita."
+   },
+   "figma": [
+    "978:1143",
+    "978:1263"
+   ]
+  },
+  {
+   "title": "Concluir e registrar o diagnóstico",
+   "desc": "Ao final dos dois encontros, revise as informações, complete os registros e prepare a continuidade da jornada.",
+   "como": {
+    "list": [
+     "Conclua o Questionário de Diagnóstico e verifique se as informações estão completas e consistentes.",
+     "Revise os registros antes de encerrar a etapa.",
+     "Sincronize as informações inseridas no tablet com o SIGMA.",
+     "Confirme a data e o horário do próximo encontro quando houver continuidade.",
+     "Explique à família que as informações serão processadas pelo sistema e utilizadas para preparar as sugestões da etapa seguinte."
+    ],
+    "lembre": "O SIGMA reúne os registros que serão utilizados posteriormente como base para a construção do Plano de Desenvolvimento Familiar."
+   },
+   "evitar": {
+    "list": [
+     "Deixar registros para depois.",
+     "Utilizar informações incompletas.",
+     "Encerrar a visita sem verificar a sincronização.",
+     "Concluir a etapa sem orientar a família sobre o próximo passo."
+    ],
+    "lembre": "O SIGMA reúne os registros que serão utilizados posteriormente como base para a construção do Plano de Desenvolvimento Familiar."
+   },
+   "figma": [
+    "985:14",
+    "985:40"
+   ]
+  }
+ ],
+ "visitas-4-e-5": [
+  {
+   "title": "Retomar o diagnóstico",
+   "desc": "Retome com a família as principais informações identificadas no diagnóstico e mostre como elas podem orientar a construção do PDF.",
+   "como": {
+    "list": [
+     "Retome necessidades e potencialidades identificadas.",
+     "Retome o caderno da família e associe ao momento de montar o PDF.",
+     "Apresente as informações que podem orientar o planejamento.",
+     "Relacione as oportunidades disponíveis aos objetivos identificados."
+    ],
+    "lembre": "O diagnóstico é o ponto de partida para a construção do PDF."
+   },
+   "evitar": {
+    "list": [
+     "Desconsiderar informações relevantes do diagnóstico.",
+     "Apresentar caminhos sem relação com a realidade familiar."
+    ],
+    "lembre": "O diagnóstico é o ponto de partida para a construção do PDF."
+   },
+   "figma": [
+    "980:2318",
+    "980:2446"
+   ]
+  },
+  {
+   "title": "Apresentar oportunidades",
+   "desc": "Utilize o Caderno de Políticas e as informações disponíveis no SIGMA para apresentar possibilidades relacionadas aos objetivos da família.",
+   "como": {
+    "list": [
+     "Apresente políticas, serviços, programas e benefícios que possam contribuir para os objetivos dentificados.",
+     "Verifique a elegibilidade da família.",
+     "Explique de maneira clara o que cada oportunidade oferece.",
+     "Pergunte quais possibilidades fazem sentido para a família.",
+     "Associe ao Caderno da Família",
+     "Estimule a família a formular ou ajustar seus próprios objetivos."
+    ],
+    "lembre": "O agente amplia as possibilidades de escolha; a decisão sobre quais caminhos seguir é da família."
+   },
+   "evitar": {
+    "list": [
+     "Apresentar oportunidades sem relação com a realidade familiar.",
+     "Prometer acesso a serviços ou benefícios sujeitos à disponibilidade de vagas.",
+     "Escolher pela família."
+    ],
+    "lembre": "O agente amplia as possibilidades de escolha; a decisão sobre quais caminhos seguir é da família."
+   },
+   "figma": [
+    "980:2343",
+    "980:2469"
+   ]
+  },
+  {
+   "title": "Definir objetivos",
+   "desc": "Apoie a família na escolha dos objetivos que deseja perseguir durante sua trajetória no Programa.",
+   "como": {
+    "list": [
+     "Apresente os objetivos sugeridos a partir do diagnóstico.",
+     "Explique o que cada objetivo significa.",
+     "Pergunte quais são prioritários para a família.",
+     "Associe ao caderno da família",
+     "Estimule a família a formular ou ajustar seus próprios objetivos."
+    ],
+    "lembre": "O plano deve refletir aquilo que a família deseja alcançar."
+   },
+   "evitar": {
+    "list": [
+     "Impor objetivos à família.",
+     "Tratar todos os objetivos sugeridos como obrigatórios.",
+     "Desconsiderar prioridades manifestadas pela família."
+    ],
+    "lembre": "O plano deve refletir aquilo que a família deseja alcançar."
+   },
+   "figma": [
+    "980:2369",
+    "980:2493"
+   ]
+  },
+  {
+   "title": "Definir ações e responsabilidades",
+   "desc": "Transforme os objetivos escolhidos em ações concretas, considerando responsabilidades, prazos e condições reais de execução.",
+   "como": {
+    "list": [
+     "Liste as ações necessárias para cada objetivo.",
+     "Defina quem será responsável por cada ação.",
+     "Estabeleça prazos possíveis.",
+     "Considere as condições da família e as oportunidades existentes no território."
+    ],
+    "lembre": "O plano deve ser possível de colocar em prática e poderá ser ajustado ao longo do acompanhamento."
+   },
+   "evitar": {
+    "list": [
+     "Impor metas irreais.",
+     "Criar ações desconectadas das possibilidades existentes.",
+     "Elaborar um plano que a família não compreenda."
+    ],
+    "lembre": "O plano deve ser possível de colocar em prática e poderá ser ajustado ao longo do acompanhamento."
+   },
+   "figma": [
+    "980:2395",
+    "980:2517"
+   ]
+  },
+  {
+   "title": "Pactuar e registrar o PDF",
+   "desc": "Revise o plano com a família, confirme os compromissos e registre as definições nos instrumentos correspondentes.",
+   "como": {
+    "list": [
+     "Leia o plano junto com a família e confirme se os objetivos refletem aquilo que ela deseja.",
+     "Esclareça dúvidas e confirme os compromissos assumidos.",
+     "Pactue o PDF no SIGMA.",
+     "Registre os objetivos e ações no Caderno da Família conforme aparecem no sistema.",
+     "Associe as ações ao número correspondente do objetivo no SIGMA e confira a consistência das informações."
+    ],
+    "lembre": "O PDF é construído em conjunto com a família e pode ser ajustado ao longo do acompanhamento."
+   },
+   "evitar": {
+    "list": [
+     "Registrar objetivos ou ações diferentes do que foi pactuado.",
+     "Deixar de transpor para o Caderno da Família as informações registradas no SIGMA.",
+     "Encerrar a etapa sem confirmar os compromissos assumidos."
+    ],
+    "lembre": "O PDF é construído em conjunto com a família e pode ser ajustado ao longo do acompanhamento."
+   },
+   "figma": [
+    "980:2420",
+    "980:2540"
+   ]
+  }
+ ],
+ "visitas-mensais": [
+  {
+   "title": "Acolher e saber o que mudou",
+   "desc": "Retome o vínculo e abra espaço para a família contar o que aconteceu desde o último encontro.",
+   "como": {
+    "list": [
+     "Pergunte sobre as principais mudanças desde a última visita.",
+     "Deixe a família apresentar suas experiências antes de retomar as ações do PDF.",
+     "Observe mudanças na composição, rotina ou situação familiar.",
+     "Retome acontecimentos relevantes identificados anteriormente."
+    ],
+    "lembre": "Antes de acompanhar o plano, é preciso compreender como está a família."
+   },
+   "evitar": {
+    "list": [
+     "Começar cobrando o que não foi realizado.",
+     "Transformar a conversa em um interrogatório.",
+     "Presumir que uma ação não realizada significa falta de interesse da família."
+    ],
+    "lembre": "Antes de acompanhar o plano, é preciso compreender como está a família."
+   },
+   "figma": [
+    "980:2597",
+    "980:2725"
+   ]
+  },
+  {
+   "title": "Reconhecer os avanços",
+   "desc": "Identifique com a família aquilo que foi conquistado e relacione os avanços aos objetivos definidos no PDF.",
+   "como": {
+    "list": [
+     "Pergunte o que a família considera uma conquista desde o último encontro.",
+     "Relacione os avanços aos objetivos e ações do PDF.",
+     "Reconheça o esforço e a participação da família.",
+     "Estimule a família a perceber sua própria evolução."
+    ],
+    "lembre": "Reconhecer avanços também fortalece a autonomia da família."
+   },
+   "evitar": {
+    "list": [
+     "Comparar uma família com outra.",
+     "Minimizar conquistas.",
+     "Apresentar o resultado como mérito exclusivo do Programa ou do agente."
+    ],
+    "lembre": "Reconhecer avanços também fortalece a autonomia da família."
+   },
+   "figma": [
+    "980:2622",
+    "980:2747"
+   ]
+  },
+  {
+   "title": "Acompanhar objetivos e ações",
+   "desc": "Retome o PDF e compreenda a situação de cada objetivo e ação, sem transformar a visita em uma prestação de contas.",
+   "como": {
+    "list": [
+     "Verifique o que foi concluído, está em andamento, não foi realizado ou está atrasado.",
+     "Identifique o que dificultou ou favoreceu o avanço.",
+     "Considere se a ação ainda corresponde à realidade da família.",
+     "Registre as informações necessárias para orientar a continuidade."
+    ],
+    "lembre": "O acompanhamento serve para compreender o caminho e apoiar sua continuidade."
+   },
+   "evitar": {
+    "list": [
+     "Cobrar o cumprimento das ações.",
+     "Pressionar a família a manter ações que já não correspondem à sua realidade.",
+     "Considerar o atraso como fracasso sem compreender suas causas."
+    ],
+    "lembre": "O acompanhamento serve para compreender o caminho e apoiar sua continuidade."
+   },
+   "figma": [
+    "980:2647",
+    "980:2770"
+   ]
+  },
+  {
+   "title": "Identificar novas necessidades e oportunidades",
+   "desc": "Observe mudanças que possam afetar a trajetória da família e identifique novas possibilidades de apoio.",
+   "como": {
+    "list": [
+     "Observe mudanças que possam afetar a trajetória da família e identifique novas possibilidades de apoio.",
+     "Observe novas oportunidades disponíveis no território.",
+     "Identifique situações que possam afetar o desenvolvimento da família.",
+     "Quando a necessidade ultrapassar sua atuação, oriente a família e acione os apoios necessários."
+    ],
+    "lembre": "Novas vulnerabilidades, situações de risco ou mudanças significativas devem ser tratadas conforme os fluxos do Programa."
+   },
+   "evitar": {
+    "list": [
+     "Ignorar mudanças que não estavam previstas no PDF.",
+     "Assumir que o plano contempla todas as necessidades futuras.",
+     "Realizar encaminhamentos fora de sua atribuição sem orientação."
+    ],
+    "lembre": "Novas vulnerabilidades, situações de risco ou mudanças significativas devem ser tratadas conforme os fluxos do Programa."
+   },
+   "figma": [
+    "980:2673",
+    "980:2793"
+   ]
+  },
+  {
+   "title": "Revisar o PDF e orientar a continuidade",
+   "desc": "Quando a realidade da família mudar, avalie com ela se os objetivos e ações continuam adequados e defina o que será retomado no próximo encontro.",
+   "como": {
+    "list": [
+     "Verifique se os objetivos continuam fazendo sentido.",
+     "Avalie se as ações ainda são adequadas e se é necessário incluir ou encerrar alguma ação.",
+     "Realize os ajustes previstos no Programa e registre as alterações no SIGMA e no Caderno da Família.",
+     "Defina com a família o que continuará em andamento e quais ações serão priorizadas.",
+     "Combine orientações, encaminhamentos e o foco da próxima visita.",
+     "Atualize o sigma mesmo que não tenha tido novos ajustes.",
+     "Agende a próxima visita."
+    ],
+    "lembre": "Revisar o plano não significa abandonar o que foi pactuado, mas adequá-lo à realidade atual da família. A atualização do SIGMA a cada visita garante a visibilidade do percurso da família, mesmo que não haja avanços de uma visita a outra, é importante garantir o registro."
+   },
+   "evitar": {
+    "list": [
+     "Alterar o plano sem pactuação com a família.",
+     "Abandonar objetivos sem compreender o motivo da mudança.",
+     "Encerrar a visita sem registrar as alterações ou combinar a continuidade."
+    ],
+    "lembre": "Revisar o plano não significa abandonar o que foi pactuado, mas adequá-lo à realidade atual da família. A atualização do SIGMA a cada visita garante a visibilidade do percurso da família, mesmo que não haja avanços de uma visita a outra, é importante garantir o registro."
+   },
+   "figma": [
+    "980:2698",
+    "980:2816"
+   ]
+  }
+ ],
+ "conclusao": [
+  {
+   "title": "Retomar a trajetória da família",
+   "desc": "Relembre com a família o caminho percorrido no Programa, os objetivos definidos e as principais mudanças alcançadas.",
+   "como": {
+    "list": [
+     "Retome os objetivos registrados no Plano de Desenvolvimento Familiar.",
+     "Pergunte o que mudou desde o início da jornada.",
+     "Retome o Caderno da Família e associe ao momento no programa.",
+     "Reconheça as conquistas construídas pela própria família.",
+     "Estimule a família a identificar o que foi mais importante em sua trajetória."
+    ],
+    "lembre": "A conclusão representa uma etapa alcançada. O acompanhamento ajuda a sustentar os avanços e identificar situações que possam exigir atenção."
+   },
+   "evitar": {
+    "list": [
+     "Transformar a conversa em avaliação de desempenho.",
+     "Tratar a conclusão como garantia de que todas as dificuldades desapareceram.",
+     "Atribuir ao Programa ou ao agente conquistas construídas pela própria família."
+    ],
+    "lembre": "A conclusão representa uma etapa alcançada. O acompanhamento ajuda a sustentar os avanços e identificar situações que possam exigir atenção."
+   },
+   "figma": [
+    "985:75",
+    "985:206"
+   ]
+  },
+  {
+   "title": "Verificar a manutenção das conquistas",
+   "desc": "Converse sobre as mudanças que contribuíram para a melhoria das condições de vida e para a autonomia da família.",
+   "como": {
+    "list": [
+     "Verifique a permanência no trabalho ou na atividade empreendedora.",
+     "Converse sobre a continuidade dos estudos ou da qualificação.",
+     "Converse sobre a continuidade dos estudos ou da qualificação.",
+     "Observe mudanças nas condições de vida.",
+     "Compreenda se a família continua utilizando os recursos e oportunidades acessados durante a jornada."
+    ],
+    "lembre": "O foco é compreender como a família está vivendo depois da conclusão e como os avanços estão se sustentando."
+   },
+   "evitar": {
+    "list": [
+     "Limitar o acompanhamento à conferência de resultados.",
+     "Pressupor que uma conquista será mantida sem compreender a situação atual da família.",
+     "Desconsiderar mudanças que afetem a autonomia."
+    ],
+    "lembre": "O foco é compreender como a família está vivendo depois da conclusão e como os avanços estão se sustentando."
+   },
+   "figma": [
+    "985:101",
+    "985:229"
+   ]
+  },
+  {
+   "title": "Identificar riscos e novas necessidades",
+   "desc": "Investigue mudanças que possam comprometer os avanços alcançados ou gerar novas situações de vulnerabilidade.",
+   "como": {
+    "list": [
+     "Pergunte o que ficou mais difícil desde a última conversa.",
+     "Identifique acontecimentos que tenham alterado a situação da família.",
+     "Pergunte se existe alguma necessidade para a qual a família precisa de orientação.",
+     "Observe mudanças de trabalho, renda, composição familiar ou outras circunstâncias relevantes.",
+     "Quando houver situação que demande atuação da rede ou apoio institucional, faça a orientação ou o encaminhamento adequado e comunique a Supervisão quando necessário."
+    ],
+    "lembre": "Uma nova dificuldade não significa necessariamente que as conquistas anteriores foram perdidas. O importante é compreender a situação e identificar os apoios necessários."
+   },
+   "evitar": {
+    "list": [
+     "Interpretar uma nova vulnerabilidade como perda da trajetória anterior.",
+     "Ignorar mudanças significativas.",
+     "Realizar encaminhamentos fora de sua atribuição."
+    ],
+    "lembre": "Uma nova dificuldade não significa necessariamente que as conquistas anteriores foram perdidas. O importante é compreender a situação e identificar os apoios necessários."
+   },
+   "figma": [
+    "985:127",
+    "985:252"
+   ]
+  },
+  {
+   "title": "Orientar e fortalecer a autonomia",
+   "desc": "Apoie a família para que continue utilizando os caminhos, serviços, direitos, oportunidades e redes de apoio construídos durante o Programa.",
+   "como": {
+    "list": [
+     "Oriente sobre serviços e oportunidades disponíveis.",
+     "Reforce caminhos de acesso a direitos.",
+     "Indique serviços da rede quando necessário.",
+     "Esclareça dúvidas que possam afetar a autonomia da família.",
+     "Sempre que possível, estimule a família a identificar e utilizar seus próprios recursos e redes de apoio."
+    ],
+    "lembre": "O acompanhamento deve reforçar a capacidade da família de tomar decisões e utilizar seus próprios recursos."
+   },
+   "evitar": {
+    "list": [
+     "Assumir pela família aquilo que ela pode realizar autonomamente.",
+     "Criar dependência do agente para acessar serviços e oportunidades.",
+     "Encaminhar sem explicar à família o caminho para continuidade."
+    ],
+    "lembre": "O acompanhamento deve reforçar a capacidade da família de tomar decisões e utilizar seus próprios recursos."
+   },
+   "figma": [
+    "985:153",
+    "985:275"
+   ]
+  },
+  {
+   "title": "Registrar e concluir o acompanhamento",
+   "desc": "Registre o acompanhamento realizado e, ao final dos seis meses, prepare o encerramento do ciclo previsto para a família.",
+   "como": {
+    "list": [
+     "Registre no SIGMA a situação da família, os avanços, dificuldades, orientações e encaminhamentos pertinentes.",
+     "Verifique se o período de seis meses foi cumprido.",
+     "Retome com a família os principais avanços de sua trajetória.",
+     "Reconheça os caminhos que ela poderá continuar utilizando de forma autônoma.",
+     "Realize os registros finais conforme os procedimentos do Programa."
+    ],
+    "lembre": "A conclusão dos seis meses encerra o ciclo de acompanhamento previsto para a família no Programa Superação."
+   },
+   "evitar": {
+    "list": [
+     "Registrar informações sem relação com o acompanhamento realizado.",
+     "Encerrar o ciclo sem realizar os registros previstos.",
+     "Tratar o encerramento como perda do vínculo ou das conquistas alcançadas."
+    ],
+    "lembre": "A conclusão dos seis meses encerra o ciclo de acompanhamento previsto para a família no Programa Superação."
+   },
+   "figma": [
+    "985:180",
+    "985:298"
+   ]
+  }
+ ]
+}
