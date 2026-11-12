@@ -1,5 +1,6 @@
 /* Estação do Agente · SuperAção SP — estilos da casca (as telas trazem o próprio estilo inline, gerado do Figma) */
 html,body{margin:0;padding:0;background:#1e1e1e;}
+html{scrollbar-gutter:stable;} /* reserva o espaço da barra de rolagem: abrir/fechar popup não desloca a página */
 body{-webkit-font-smoothing:antialiased;}
 #app{position:relative;margin:0 auto;}
 .n{position:absolute;left:0;top:0;transform-origin:0 0;box-sizing:border-box;}
