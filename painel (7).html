@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Painel de uso · Estação do Agente</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#003a79; --azul2:#0b5cad; --claro:#e8f2fb; --fundo:#f4f6f9; --linha:#dbe4ee;
+  --tinta:#13253d; --tinta2:#4b5b70; --tinta3:#7a8899; --barra:#1f6fc2; --alerta:#b45309; --alerta-fundo:#fff4e5;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--fundo);color:var(--tinta);font-family:Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.faixa{background:linear-gradient(90deg,#77c3ee,#0b5cad 55%,#003a79);color:#fff;font-size:13px;text-align:center;padding:9px 16px}
+header{background:#0e3a66;color:#fff;padding:18px 28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.02em}
+header h1 small{font-weight:500;opacity:.8;margin-left:8px}
+header .acoes{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+main{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--azul);background:#fff;color:var(--azul);border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px}
+.btn.cheio{background:var(--azul);color:#fff}
+header .btn{border-color:#fff;background:transparent;color:#fff}
+.periodo{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.periodo span{font-size:13px;color:var(--tinta2);margin-right:6px}
+.periodo button[aria-pressed=true]{background:var(--azul);color:#fff}
+#atualizado{margin-left:auto;font-size:12px;color:var(--tinta3)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.kpi{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:16px 18px}
+.kpi .rot{font-size:12.5px;color:var(--tinta2);font-weight:600}
+.kpi .val{font-size:30px;font-weight:800;color:var(--azul);margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.kpi .nota{font-size:12px;color:var(--tinta3)}
+.kpi.alerta .val{color:var(--alerta)}
+.card{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+.card h2{font-size:15px;margin:0 0 4px;color:var(--azul)}
+.card .sub{font-size:12.5px;color:var(--tinta2);margin:0 0 14px}
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grade .card{margin-bottom:0}
+.linhas{display:flex;flex-direction:column;gap:2px}
+.lin{display:grid;grid-template-columns:minmax(0,1fr) 120px 44px;gap:10px;align-items:center;font-size:13px;padding:5px 4px;border-radius:6px}
+.lin:hover{background:var(--claro)}
+.lin .nome{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.trilho{height:8px;background:#eef2f6;border-radius:4px;overflow:hidden}
+.preenche{height:100%;background:var(--barra);border-radius:0 4px 4px 0;width:0;transition:width .5s ease}
+.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.tag{font-size:10.5px;font-weight:700;border-radius:999px;padding:1px 7px;margin-left:6px;background:var(--claro);color:var(--azul2);vertical-align:1px}
+.tag.alerta{background:var(--alerta-fundo);color:var(--alerta)}
+.vazio{color:var(--tinta3);font-size:13px;padding:6px 4px}
+.mais{margin-top:8px;font-size:12.5px;color:var(--azul2);background:none;border:0;padding:4px;font-weight:600}
+#grafico{position:relative}
+#grafico svg{display:block;width:100%;height:220px}
+#dica{position:absolute;pointer-events:none;background:var(--tinta);color:#fff;font-size:12px;padding:6px 9px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-115%);opacity:0;transition:opacity .1s}
+.caminho .lin{grid-template-columns:minmax(0,1fr) 1.4fr 54px 44px}
+.caminho .pct{text-align:right;color:var(--tinta3);font-size:12px}
+.oculto{display:none!important}
+#porta{max-width:420px;margin:70px auto;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px}
+#porta h2{margin:0 0 6px;color:var(--azul);font-size:19px}
+#porta p{color:var(--tinta2);font-size:13.5px;margin:0 0 18px;line-height:1.45}
+#porta input{width:100%;font:inherit;font-size:15px;padding:11px 14px;border:1px solid var(--linha);border-radius:10px;margin-bottom:12px}
+#porta .erro{color:var(--alerta);font-size:13px;min-height:18px;margin-bottom:8px}
+.rodape{font-size:12px;color:var(--tinta3);margin-top:26px;line-height:1.5}
+@media (max-width:860px){.kpis{grid-template-columns:1fr 1fr}.grade{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="faixa">Governo do Estado de São Paulo · Secretaria de Desenvolvimento Social · Apoio técnico: FGV Projetos</div>
+<header>
+  <h1>ESTAÇÃO DO AGENTE <small>Painel de uso</small></h1>
+  <div class="acoes oculto" id="acoesTopo">
+    <button class="btn" id="copiar">Copiar resumo para o relatório</button>
+    <button class="btn" id="sair">Sair</button>
+  </div>
+</header>
+
+<form id="porta">
+  <h2>Acesso restrito</h2>
+  <p>Digite a senha do painel. Ela fica guardada só nesta aba e é apagada quando você a fecha.</p>
+  <input type="password" id="senha" placeholder="Senha" autocomplete="current-password" required>
+  <div class="erro" id="erroPorta"></div>
+  <button class="btn cheio" type="submit">Entrar</button>
+</form>
+
+<main id="painel" class="oculto">
+  <div class="periodo">
+    <span>Período:</span>
+    <button class="btn" data-dias="7">7 dias</button>
+    <button class="btn" data-dias="30" aria-pressed="true">30 dias</button>
+    <button class="btn" data-dias="90">90 dias</button>
+    <button class="btn" data-dias="365">12 meses</button>
+    <button class="btn" id="atualizar">Atualizar</button>
+    <div id="atualizado"></div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="rot">Acessos (sessões)</div><div class="val" id="k-sessoes">–</div><div class="nota" id="k-sessoes-nota"></div></div>
+    <div class="kpi"><div class="rot">Telas vistas</div><div class="val" id="k-telas">–</div><div class="nota" id="k-telas-nota"></div></div>
+    <div class="kpi"><div class="rot">Vídeos abertos</div><div class="val" id="k-videos">–</div><div class="nota" id="k-videos-nota"></div></div>
+    <div class="kpi alerta"><div class="rot">Buscas sem resultado</div><div class="val" id="k-sem">–</div><div class="nota" id="k-sem-nota"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Acessos por dia</h2>
+    <p class="sub">Sessões únicas em cada dia do período.</p>
+    <div id="grafico"><div id="dica"></div></div>
+  </div>
+
+  <div class="grade">
+    <div class="card caminho">
+      <h2>Caminho de uso</h2>
+      <p class="sub">Das sessões do período, quantas chegaram a cada ação.</p>
+      <div class="linhas" id="l-caminho"></div>
+    </div>
+    <div class="card">
+      <h2>Aparelhos</h2>
+      <p class="sub">Sessões por tipo de aparelho.</p>
+      <div class="linhas" id="l-disp"></div>
+    </div>
+  </div>
+  <div style="height:18px"></div>
+
+  <div class="card">
+    <h2>O que buscaram</h2>
+    <p class="sub">Termos digitados nas buscas. <span class="tag alerta">sem resultado</span> mostra o que as pessoas procuram e o site não tem.</p>
+    <div class="linhas" id="l-buscas"></div>
+    <button class="btn" id="baixarBuscas" style="margin-top:12px">Baixar buscas (CSV)</button>
+  </div>
+
+  <div class="grade">
+    <div class="card"><h2>Telas mais vistas</h2><p class="sub">Vezes que cada tela foi aberta.</p><div class="linhas" id="l-telas"></div></div>
+    <div class="card"><h2>Popups mais abertos</h2><p class="sub">Passos das etapas, módulos e legendas.</p><div class="linhas" id="l-popups"></div></div>
+  </div>
+  <div style="height:18px"></div>
+  <div class="grade">
+    <div class="card"><h2>Vídeos mais assistidos</h2><p class="sub">Cliques para abrir cada vídeo dos Tutoriais SIGMA.</p><div class="linhas" id="l-videos"></div></div>
+    <div class="card"><h2>Documentos e links</h2><p class="sub">Documentos da Biblioteca, WhatsApp de apoio, Oportunidades e outros sites.</p><div class="linhas" id="l-links"></div></div>
+  </div>
+
+  <p class="rodape">Dados anônimos: o site não usa cookies e não guarda nome, e-mail, telefone nem IP. Cada sessão é um identificador aleatório que some quando a aba é fechada; a mesma pessoa em dias diferentes conta como sessões diferentes.</p>
+</main>
+
+<script>
+(function(){
+  /* ====================== AJUSTE AQUI ====================== */
+  var API = 'https://estacao-analytics.beatriz-ribas.workers.dev';
+  /* ========================================================= */
+
+  var $ = function(id){ return document.getElementById(id); };
+  var dias = 30, dados = null;
+  var fmt = function(n){ return (n || 0).toLocaleString('pt-BR'); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+  function chave(){ try { return sessionStorage.getItem('est_senha') || ''; } catch(e){ return window._senha || ''; } }
+  function guardar(k){ try { sessionStorage.setItem('est_senha', k); } catch(e){ window._senha = k; } }
+  function esquecer(){ try { sessionStorage.removeItem('est_senha'); } catch(e){} window._senha = ''; }
+
+  $('porta').addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!API){ $('erroPorta').textContent = 'O painel ainda não está ligado ao servidor (constante API vazia no painel.html).'; return; }
+    guardar($('senha').value.trim()); entrar();
+  });
+  $('sair').addEventListener('click', function(){ esquecer(); location.reload(); });
+  function entrar(){ $('porta').classList.add('oculto'); $('painel').classList.remove('oculto'); $('acoesTopo').classList.remove('oculto'); carregar(); }
+  if(chave() && API) entrar();
+
+  [].forEach.call(document.querySelectorAll('.periodo button[data-dias]'), function(b){
+    b.addEventListener('click', function(){
+      [].forEach.call(document.querySelectorAll('.periodo button[data-dias]'), function(o){ o.removeAttribute('aria-pressed'); });
+      b.setAttribute('aria-pressed','true'); dias = +b.dataset.dias; carregar();
+    });
+  });
+  $('atualizar').addEventListener('click', carregar);
+
+  function carregar(){
+    $('atualizado').textContent = 'Carregando…';
+    fetch(API + '/dash?k=' + encodeURIComponent(chave()) + '&dias=' + dias)
+      .then(function(r){ if(r.status === 401) throw new Error('SENHA'); if(!r.ok) throw new Error('status ' + r.status); return r.json(); })
+      .then(function(j){
+        dados = j; desenhar(j);
+        $('atualizado').textContent = 'Atualizado às ' + new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+      })
+      .catch(function(e){
+        if(e.message === 'SENHA'){
+          esquecer(); $('painel').classList.add('oculto'); $('acoesTopo').classList.add('oculto'); $('porta').classList.remove('oculto');
+          $('erroPorta').textContent = 'Senha incorreta. Confira maiúsculas, minúsculas e espaços.'; return;
+        }
+        $('atualizado').textContent = 'Não carregou (' + e.message + '). Toque em Atualizar para tentar de novo.';
+      });
+  }
+
+  function R(j, ev){ return (j.resumo || []).filter(function(x){ return x.ev === ev; })[0] || {total:0, sessoes:0}; }
+
+  function lista(el, itens, opts){
+    opts = opts || {};
+    var limite = opts.limite || 10, max = Math.max.apply(null, itens.map(function(i){ return i.v; }).concat([1]));
+    if(!itens.length){ $(el).innerHTML = '<div class="vazio">' + (opts.vazio || 'Nada registrado no período.') + '</div>'; return; }
+    function linhas(n){
+      return itens.slice(0, n).map(function(i){
+        return '<div class="lin" title="' + esc(i.nome) + ' · ' + fmt(i.v) + '"><div class="nome">' + esc(i.nome) + (i.tag || '') + '</div>' +
+               '<div class="trilho"><div class="preenche" data-p="' + Math.round(i.v / max * 100) + '"></div></div><div class="num">' + fmt(i.v) + '</div></div>';
+      }).join('');
+    }
+    $(el).innerHTML = linhas(limite) + (itens.length > limite ? '<button class="mais">Ver todos (' + itens.length + ')</button>' : '');
+    var m = $(el).querySelector('.mais');
+    if(m) m.onclick = function(){ $(el).innerHTML = linhas(itens.length); animar(el); };
+    animar(el);
+  }
+  function animar(el){ requestAnimationFrame(function(){ [].forEach.call($(el).querySelectorAll('.preenche'), function(p){ p.style.width = p.dataset.p + '%'; }); }); }
+
+  var TIPOS = { whatsapp:'WhatsApp', oportunidades:'Oportunidades', documento:'documento', site:'site', video:'vídeo' };
+
+  function desenhar(j){
+    var vis = R(j,'visitou').sessoes, telas = R(j,'viu_tela').total, vid = R(j,'abriu_video'), b = R(j,'buscou');
+    var sem = (j.buscas || []).reduce(function(s, x){ return s + (x.sem_resultado || 0); }, 0);
+    $('k-sessoes').textContent = fmt(vis);
+    $('k-sessoes-nota').textContent = (j.porDia || []).length ? 'em ' + j.porDia.length + (j.porDia.length === 1 ? ' dia' : ' dias') + ' com acesso' : 'nenhum acesso no período';
+    $('k-telas').textContent = fmt(telas);
+    $('k-telas-nota').textContent = vis ? (telas / vis).toFixed(1).replace('.', ',') + ' por sessão' : '';
+    $('k-videos').textContent = fmt(vid.total);
+    $('k-videos-nota').textContent = vid.sessoes ? 'em ' + fmt(vid.sessoes) + ' sessões' : '';
+    $('k-sem').textContent = fmt(sem);
+    $('k-sem-nota').textContent = b.total ? Math.round(sem / b.total * 100) + '% de ' + fmt(b.total) + ' buscas' : 'nenhuma busca no período';
+
+    grafico(j.porDia || [], j.desde, j.dias);
+
+    var base = vis || 1;
+    var passos = [['visitou','Entraram no site'],['viu_tela','Navegaram pelas telas'],['abriu_popup','Abriram um popup'],
+                  ['buscou','Usaram a busca'],['abriu_video','Abriram um vídeo'],['abriu_documento','Abriram um documento'],['abriu_link','Saíram por um link']];
+    $('l-caminho').innerHTML = passos.map(function(p){
+      var s = R(j, p[0]).sessoes, pct = Math.min(100, Math.round(s / base * 100));
+      return '<div class="lin"><div class="nome">' + p[1] + '</div><div class="trilho"><div class="preenche" data-p="' + pct + '"></div></div>' +
+             '<div class="num">' + fmt(s) + '</div><div class="pct">' + pct + '%</div></div>';
+    }).join('');
+    animar('l-caminho');
+
+    lista('l-disp', (j.dispositivos || []).map(function(d){ return { nome: d.disp ? d.disp.charAt(0).toUpperCase() + d.disp.slice(1) : 'Não identificado', v: d.sessoes }; }));
+    lista('l-buscas', (j.buscas || []).map(function(x){
+      return { nome: x.termo, v: x.vezes, tag: x.sem_resultado ? '<span class="tag alerta">' + (x.sem_resultado === x.vezes ? 'sem resultado' : x.sem_resultado + '× sem resultado') + '</span>' : '' };
+    }), { limite: 15, vazio: 'Ninguém usou a busca no período.' });
+    var it = function(arr){ return (arr || []).map(function(x){ return { nome: x.item, v: x.vezes }; }); };
+    lista('l-telas', it(j.telas));
+    lista('l-popups', it(j.popups));
+    lista('l-videos', it(j.videos));
+    var links = (j.documentos || []).map(function(x){ return { nome: x.item, v: x.vezes, tag: '<span class="tag">documento</span>' }; })
+      .concat((j.links || []).map(function(x){ return { nome: x.item, v: x.vezes, tag: '<span class="tag">' + (TIPOS[x.tipo] || 'link') + '</span>' }; }))
+      .sort(function(a, b){ return b.v - a.v; });
+    lista('l-links', links);
+  }
+
+  /* gráfico de linha: um único conjunto (sessões por dia), com dica ao passar o dedo/mouse */
+  function grafico(pd, desde, ndias){
+    var mapa = {}; pd.forEach(function(d){ mapa[d.dia] = d.sessoes; });
+    var serie = [], d0 = new Date(desde + 'T12:00:00Z');
+    for(var i = 0; i < ndias; i++){ var d = new Date(d0.getTime() + i * 864e5).toISOString().slice(0,10); serie.push({ dia: d, v: mapa[d] || 0 }); }
+    var W = 1000, H = 220, L = 36, Rm = 10, T = 12, B = 26, max = Math.max(4, Math.max.apply(null, serie.map(function(s){ return s.v; })));
+    var passo = Math.pow(10, Math.floor(Math.log10(max))); var topo = Math.ceil(max / passo) * passo; if(topo / passo < 3) { passo /= 2; }
+    var x = function(i){ return L + (serie.length < 2 ? 0 : i * (W - L - Rm) / (serie.length - 1)); };
+    var y = function(v){ return T + (H - T - B) * (1 - v / topo); };
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="Sessões por dia">';
+    for(var g = 0; g <= topo; g += passo){ s += '<line x1="' + L + '" x2="' + (W - Rm) + '" y1="' + y(g) + '" y2="' + y(g) + '" stroke="#e6ecf2" stroke-width="1"/>' +
+      '<text x="' + (L - 6) + '" y="' + (y(g) + 4) + '" font-size="11" text-anchor="end" fill="#7a8899">' + fmt(g) + '</text>'; }
+    var cada = Math.ceil(serie.length / 8);
+    serie.forEach(function(p, i){ if(i % cada === 0 || i === serie.length - 1) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" font-size="11" text-anchor="' + (i === serie.length - 1 ? 'end' : i === 0 ? 'start' : 'middle') + '" fill="#7a8899">' + p.dia.slice(8,10) + '/' + p.dia.slice(5,7) + '</text>'; });
+    var pts = serie.map(function(p, i){ return x(i).toFixed(1) + ',' + y(p.v).toFixed(1); }).join(' ');
+    s += '<polygon points="' + L + ',' + y(0) + ' ' + pts + ' ' + x(serie.length - 1) + ',' + y(0) + '" fill="#1f6fc2" opacity=".10"/>';
+    s += '<polyline points="' + pts + '" fill="none" stroke="#1f6fc2" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>';
+    s += '<line id="cruz" x1="0" x2="0" y1="' + T + '" y2="' + y(0) + '" stroke="#13253d" stroke-width="1" opacity="0" vector-effect="non-scaling-stroke"/>';
+    s += '<rect x="' + L + '" y="0" width="' + (W - L - Rm) + '" height="' + H + '" fill="transparent" id="alvo"/></svg>';
+    var box = $('grafico'); box.innerHTML = s + '<div id="dica"></div>';
+    var svg = box.querySelector('svg'), dica = $('dica'), cruz = box.querySelector('#cruz');
+    function mover(ev){
+      var r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) / r.width * W;
+      var i = Math.max(0, Math.min(serie.length - 1, Math.round((px - L) / ((W - L - Rm) / Math.max(1, serie.length - 1)))));
+      var p = serie[i]; cruz.setAttribute('x1', x(i)); cruz.setAttribute('x2', x(i)); cruz.setAttribute('opacity', '.35');
+      dica.style.left = (x(i) / W * r.width) + 'px'; dica.style.top = (y(p.v) / H * r.height) + 'px'; dica.style.opacity = 1;
+      dica.textContent = p.dia.slice(8,10) + '/' + p.dia.slice(5,7) + ' · ' + fmt(p.v) + ' sessões';
+    }
+    svg.addEventListener('pointermove', mover);
+    svg.addEventListener('pointerleave', function(){ dica.style.opacity = 0; cruz.setAttribute('opacity', 0); });
+  }
+
+  $('copiar').addEventListener('click', function(){
+    if(!dados) return; var j = dados, b = this;
+    var top = function(arr, n){ return (arr || []).slice(0, n).map(function(x, i){ return '  ' + (i + 1) + '. ' + x.item + ' (' + fmt(x.vezes) + ')'; }).join('\n'); };
+    var semR = (j.buscas || []).filter(function(x){ return x.sem_resultado; }).slice(0, 10);
+    var t = ['Estação do Agente · uso nos últimos ' + dias + ' dias (até ' + new Date().toLocaleDateString('pt-BR') + ')', '',
+      fmt(R(j,'visitou').sessoes) + ' acessos, ' + fmt(R(j,'viu_tela').total) + ' telas vistas, ' + fmt(R(j,'abriu_video').total) + ' vídeos abertos, ' +
+      fmt(R(j,'abriu_documento').total) + ' documentos abertos, ' + fmt(R(j,'buscou').total) + ' buscas.', '',
+      'Telas mais vistas:', top(j.telas, 5), '', 'Vídeos mais assistidos:', top(j.videos, 5)];
+    if(semR.length){ t.push('', 'Buscas que não encontraram nada:'); semR.forEach(function(x, i){ t.push('  ' + (i + 1) + '. "' + x.termo + '" (' + fmt(x.sem_resultado) + ')'); }); }
+    var txt = t.join('\n');
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(function(){ b.textContent = 'Resumo copiado'; })
+      .catch(function(){ b.textContent = 'Não foi possível copiar'; })
+      .then(function(){ setTimeout(function(){ b.textContent = 'Copiar resumo para o relatório'; }, 2200); });
+  });
+
+  $('baixarBuscas').addEventListener('click', function(){
+    if(!dados) return;
+    var csv = ['Termo;Vezes;Sem resultado'].concat((dados.buscas || []).map(function(x){ return '"' + String(x.termo).replace(/"/g,'""') + '";' + x.vezes + ';' + (x.sem_resultado || 0); }));
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['﻿' + csv.join('\n')], { type:'text/csv;charset=utf-8' }));
+    a.download = 'estacao-buscas-' + dias + 'dias.csv'; document.body.appendChild(a); a.click(); a.remove();
+  });
+})();
+</script>
+</body>
+</html>
